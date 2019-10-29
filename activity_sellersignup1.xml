@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passcon1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/passcon1"
+        android:layout_marginTop="17dp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/street1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/street1"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phnum1"
+        android:layout_alignStart="@+id/phnum1"
+        android:layout_below="@+id/phnum1"
+        android:text="Bank Acc Number" />
+
+    <EditText
+        android:id="@+id/bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bank"
+        android:layout_alignStart="@+id/bank"
+        android:layout_below="@+id/bank"
+        android:text="Street" />
+
+    <EditText
+        android:id="@+id/street1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView21"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/street1"
+        android:layout_alignStart="@+id/street1"
+        android:layout_below="@+id/street1"
+        android:text="City" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name1"
+        android:layout_alignStart="@+id/name1"
+        android:layout_below="@+id/name1"
+        android:text="Phone" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/city1"
+        android:layout_alignStart="@+id/city1"
+        android:layout_below="@+id/city1"
+        android:text="ZipCode" />
+
+
+    <Button
+        android:id="@+id/signupf1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pincode1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="register" />
+
+    <TextView
+        android:id="@+id/lnkLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/signupf1"
+        android:gravity="center"
+        android:onClick="test"
+        android:text="Have an account? Login"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/city1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/textView31"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_below="@+id/textView41"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/pincode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_below="@+id/textView51"
+        android:ems="10"
+        android:inputType="number" />
+</RelativeLayout>
